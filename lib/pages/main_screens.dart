@@ -1,5 +1,6 @@
 import 'package:dart_design_patterns_example/components/project_app_bar.dart';
 import 'package:dart_design_patterns_example/pages/adapter_pattern/screens/adapter_patern_screen.dart';
+import 'package:dart_design_patterns_example/pages/template_pattern/screens/template_pattern_screen.dart';
 import 'package:flutter/material.dart';
 
 class MainScreen extends StatelessWidget {
@@ -8,7 +9,11 @@ class MainScreen extends StatelessWidget {
   final List<Map<String, String>> routes = [
     {
       'title': '01.\nAdapter Pattern Example',
-      'routeName': AdapterPatternScreen.routeName
+      'routeName': AdapterPatternScreen.routeName,
+    },
+    {
+      'title': '02\nTemplate Method Exampel',
+      'routeName': TemplatePatternScreen.routeName,
     }
   ];
 
@@ -41,20 +46,23 @@ class MainScreen extends StatelessWidget {
     required BuildContext context,
     required String title,
   }) {
-    return ClipRRect(
-      borderRadius: BorderRadius.circular(5.0),
-      child: Container(
-        padding: const EdgeInsets.symmetric(horizontal: 15.0, vertical: 20.0),
-        height: 100.0,
-        color: Colors.black,
-        child: Text(
-          title,
-          style: const TextStyle(
-            fontWeight: FontWeight.bold,
-            color: Colors.white,
-            fontSize: 20.0,
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 5.0, vertical: 5.0),
+      child: ClipRRect(
+        borderRadius: BorderRadius.circular(5.0),
+        child: Container(
+          padding: const EdgeInsets.symmetric(horizontal: 15.0, vertical: 20.0),
+          height: 100.0,
+          color: Colors.black,
+          child: Text(
+            title,
+            style: const TextStyle(
+              fontWeight: FontWeight.bold,
+              color: Colors.white,
+              fontSize: 20.0,
+            ),
+            maxLines: 3,
           ),
-          maxLines: 3,
         ),
       ),
     );

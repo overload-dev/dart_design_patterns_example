@@ -5,7 +5,7 @@ import 'package:dart_design_patterns_example/pages/template_pattern/models/stude
 import 'package:dart_design_patterns_example/pages/template_pattern/templates/students_bmi_calculator.dart';
 import 'package:flutter/foundation.dart';
 
-class StudentsJsonBmiCalculator extends StudentsBmiCalculator {
+class TeenageStudentsJsonBmiCalculator extends StudentsBmiCalculator {
   final JsonStudentsApi _api = JsonStudentsApi();
 
   @override
@@ -25,5 +25,13 @@ class StudentsJsonBmiCalculator extends StudentsBmiCalculator {
             ))
         .toList();
     return studentsList;
+  }
+
+  @override
+  @protected
+  List<Student> doStudentsFiltering(List<Student> studentList) {
+    return studentList
+        .where((student) => student.age > 12 && student.age < 20)
+        .toList();
   }
 }
