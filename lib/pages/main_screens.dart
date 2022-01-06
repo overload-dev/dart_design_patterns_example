@@ -1,6 +1,7 @@
 import 'package:dart_design_patterns_example/components/project_app_bar.dart';
 import 'package:dart_design_patterns_example/pages/adapter_pattern/screens/adapter_patern_screen.dart';
 import 'package:dart_design_patterns_example/pages/composite/screen/composite_screen.dart';
+import 'package:dart_design_patterns_example/pages/strategy/screens/strategy_screen.dart';
 import 'package:dart_design_patterns_example/pages/template_pattern/screens/template_pattern_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -13,12 +14,16 @@ class MainScreen extends StatelessWidget {
       'routeName': AdapterPatternScreen.routeName,
     },
     {
-      'title': '02\nTemplate Method Example',
+      'title': '02\nTemplate Method Pattern Example',
       'routeName': TemplatePatternScreen.routeName,
     },
     {
-      'title': '03\nComposite Example',
+      'title': '03\nComposite Pattern Example',
       'routeName': CompositeScreen.routeName,
+    },
+    {
+      'title': '04\nStrategy Pattern Example',
+      'routeName': StrategyScreen.routeName,
     }
   ];
 
