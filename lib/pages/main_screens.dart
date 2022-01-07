@@ -1,8 +1,12 @@
 import 'package:dart_design_patterns_example/components/project_app_bar.dart';
 import 'package:dart_design_patterns_example/pages/adapter_pattern/screens/adapter_patern_screen.dart';
-import 'package:dart_design_patterns_example/pages/composite/screen/composite_screen.dart';
-import 'package:dart_design_patterns_example/pages/strategy/screens/strategy_screen.dart';
-import 'package:dart_design_patterns_example/pages/template_pattern/screens/template_pattern_screen.dart';
+import 'package:dart_design_patterns_example/pages/composite_pattern/screen/composite_screen.dart';
+import 'package:dart_design_patterns_example/pages/facade_pattern/screens/facade_pattern_screen.dart';
+import 'package:dart_design_patterns_example/pages/interpreter_pattern/screens/interpreter_pattern_screen.dart';
+import 'package:dart_design_patterns_example/pages/iterator_pattern/screens/iterator_pattern_screen.dart';
+import 'package:dart_design_patterns_example/pages/state_pattern/screens/state_pattern_screen.dart';
+import 'package:dart_design_patterns_example/pages/strategy_pattern/screens/strategy_screen.dart';
+import 'package:dart_design_patterns_example/pages/template_method_pattern/screens/template_pattern_screen.dart';
 import 'package:flutter/material.dart';
 
 class MainScreen extends StatelessWidget {
@@ -15,16 +19,32 @@ class MainScreen extends StatelessWidget {
     },
     {
       'title': '02\nTemplate Method Pattern Example',
-      'routeName': TemplatePatternScreen.routeName,
+      'routeName': TemplateMethodPatternScreen.routeName,
     },
     {
       'title': '03\nComposite Pattern Example',
-      'routeName': CompositeScreen.routeName,
+      'routeName': CompositePatternScreen.routeName,
     },
     {
       'title': '04\nStrategy Pattern Example',
-      'routeName': StrategyScreen.routeName,
-    }
+      'routeName': StrategyPatternScreen.routeName,
+    },
+    {
+      'title': '05\nState Pattern Example',
+      'routeName': StatePatternScreen.routeName,
+    },
+    {
+      'title': '06\nFacade Pattern Example',
+      'routeName': FacadePatternScreen.routeName,
+    },
+    {
+      'title': ' 07\nInterpreter Pattern Example',
+      'routeName': InterpreterPatternScreen.routeName,
+    },
+    {
+      'title': ' 08\nIterator Pattern Example',
+      'routeName': IteratorPatternScreen.routeName,
+    },
   ];
 
   @override
@@ -41,7 +61,8 @@ class MainScreen extends StatelessWidget {
         itemCount: routes.length,
         itemBuilder: (context, index) {
           return GestureDetector(
-            onTap: () => Navigator.pushNamed(context, routes[index]['routeName'] as String),
+            onTap: () => Navigator.pushNamed(
+                context, routes[index]['routeName'] as String),
             child: _buildItemCard(
               context: context,
               title: routes[index]['title'] as String,

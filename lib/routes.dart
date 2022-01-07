@@ -1,12 +1,20 @@
 import 'package:dart_design_patterns_example/pages/adapter_pattern/screens/adapter_patern_screen.dart';
-import 'package:dart_design_patterns_example/pages/composite/screen/composite_screen.dart';
-import 'package:dart_design_patterns_example/pages/strategy/screens/strategy_screen.dart';
-import 'package:dart_design_patterns_example/pages/template_pattern/screens/template_pattern_screen.dart';
+import 'package:dart_design_patterns_example/pages/composite_pattern/screen/composite_screen.dart';
+import 'package:dart_design_patterns_example/pages/facade_pattern/screens/facade_pattern_screen.dart';
+import 'package:dart_design_patterns_example/pages/interpreter_pattern/screens/interpreter_pattern_screen.dart';
+import 'package:dart_design_patterns_example/pages/iterator_pattern/screens/iterator_pattern_screen.dart';
+import 'package:dart_design_patterns_example/pages/state_pattern/screens/state_pattern_screen.dart';
+import 'package:dart_design_patterns_example/pages/strategy_pattern/screens/strategy_screen.dart';
+import 'package:dart_design_patterns_example/pages/template_method_pattern/screens/template_pattern_screen.dart';
 import 'package:flutter/material.dart';
 
 final Map<String, WidgetBuilder> routes = {
   AdapterPatternScreen.routeName: (context) => const AdapterPatternScreen(),
-  TemplatePatternScreen.routeName: (context) => const TemplatePatternScreen(),
-  CompositeScreen.routeName: (context) => const CompositeScreen(),
-  StrategyScreen.routeName: (context) => const StrategyScreen(),
+  TemplateMethodPatternScreen.routeName: (context) => const TemplateMethodPatternScreen(),
+  CompositePatternScreen.routeName: (context) => const CompositePatternScreen(),
+  StrategyPatternScreen.routeName: (context) => const StrategyPatternScreen(),
+  StatePatternScreen.routeName: (context) => const StatePatternScreen(),
+  FacadePatternScreen.routeName: (context) => const FacadePatternScreen(),
+  InterpreterPatternScreen.routeName: (context) => const InterpreterPatternScreen(),
+  IteratorPatternScreen.routeName: (context) => const IteratorPatternScreen(),
 };
