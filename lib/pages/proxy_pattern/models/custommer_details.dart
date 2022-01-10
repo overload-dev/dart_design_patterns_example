@@ -10,5 +10,4 @@ class CustomerDetails {
     this.hobby,
     this.position,
   );
-
 }

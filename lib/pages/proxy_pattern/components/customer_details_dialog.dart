@@ -20,7 +20,6 @@ class CustomerDetailsDialog extends StatefulWidget {
 }
 
 class _CustomerDetailsDialogState extends State<CustomerDetailsDialog> {
-
   bool isLoading = true;
 
   @override
@@ -30,7 +29,6 @@ class _CustomerDetailsDialogState extends State<CustomerDetailsDialog> {
     widget.service.getCustomerDetails(widget.customer.id).then(
           (CustomerDetails customerDetails) => setState(
             () {
-
               widget.customer.details = customerDetails;
               isLoading = false;
             },
@@ -44,7 +42,6 @@ class _CustomerDetailsDialogState extends State<CustomerDetailsDialog> {
 
   @override
   Widget build(BuildContext context) {
-
     return AlertDialog(
       title: Text(widget.customer.name),
       content: SizedBox(

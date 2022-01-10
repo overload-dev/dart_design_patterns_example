@@ -3,7 +3,6 @@ import 'package:dart_design_patterns_example/pages/proxy_pattern/proxies/icustom
 import 'package:faker/faker.dart';
 
 class CustomerDetailsService extends ICustomerDetailsService {
-  
   @override
   Future<CustomerDetails> getCustomerDetails(String id) async {
     return Future.delayed(const Duration(seconds: 2), () {

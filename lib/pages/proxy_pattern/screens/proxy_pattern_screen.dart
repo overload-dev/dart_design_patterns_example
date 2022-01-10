@@ -16,9 +16,8 @@ class ProxyPatternScreen extends StatefulWidget {
 }
 
 class _ProxyPatternScreenState extends State<ProxyPatternScreen> {
-
-  final ICustomerDetailsService _customerDetailsServiceProxy = CustomerDetailsServiceProxy(
-      CustomerDetailsService());
+  final ICustomerDetailsService _customerDetailsServiceProxy =
+      CustomerDetailsServiceProxy(CustomerDetailsService());
 
   final List<Customer> _customerList = List.generate(10, (index) => Customer());
 
@@ -43,34 +42,35 @@ class _ProxyPatternScreenState extends State<ProxyPatternScreen> {
           title: 'Proxy Pattern Example',
         ),
       ),
+      backgroundColor: Colors.white70,
       body: ScrollConfiguration(
         behavior: const ScrollBehavior(),
         child: SingleChildScrollView(
-          child: Column(
-            children: [
-              Text('Press on the list tile to see more information about the customer',
+            child: Column(
+          children: [
+            Text(
+              'Press on the list tile to see more information about the customer',
               style: Theme.of(context).textTheme.subtitle1,
               textAlign: TextAlign.center,
-              ),
-              const SizedBox(height: 30.0),
-              for (var customer in _customerList)
-                Card(
-                  child: ListTile(
-                    leading: CircleAvatar(
-                      backgroundColor: Colors.grey,
-                      child: Text(
-                        customer.name[0],
-                        style: const TextStyle(color: Colors.white),
-                      ),
+            ),
+            const SizedBox(height: 30.0),
+            for (var customer in _customerList)
+              Card(
+                child: ListTile(
+                  leading: CircleAvatar(
+                    backgroundColor: Colors.grey,
+                    child: Text(
+                      customer.name[0],
+                      style: const TextStyle(color: Colors.white),
                     ),
-                    trailing: const Icon(Icons.info_outline),
-                    title: Text(customer.name),
-                    onTap: () => _showCustomerDetails(customer),
                   ),
-                )
-            ],
-          )
-        ),
+                  trailing: const Icon(Icons.info_outline),
+                  title: Text(customer.name),
+                  onTap: () => _showCustomerDetails(customer),
+                ),
+              )
+          ],
+        )),
       ),
     );
   }
