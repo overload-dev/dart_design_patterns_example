@@ -1,6 +1,9 @@
+import 'package:dart_design_patterns_example/pages/abstract_factory_pattern/screens/abstract_factory_pattern_screen.dart';
 import 'package:dart_design_patterns_example/pages/adapter_pattern/screens/adapter_patern_screen.dart';
+import 'package:dart_design_patterns_example/pages/command_pattern/screens/command_pattern_screen.dart';
 import 'package:dart_design_patterns_example/pages/composite_pattern/screen/composite_screen.dart';
 import 'package:dart_design_patterns_example/pages/facade_pattern/screens/facade_pattern_screen.dart';
+import 'package:dart_design_patterns_example/pages/factory_method_pattern/screens/factory_method_pattern_screen.dart';
 import 'package:dart_design_patterns_example/pages/interpreter_pattern/screens/interpreter_pattern_screen.dart';
 import 'package:dart_design_patterns_example/pages/iterator_pattern/screens/iterator_pattern_screen.dart';
 import 'package:dart_design_patterns_example/pages/state_pattern/screens/state_pattern_screen.dart';
@@ -17,4 +20,7 @@ final Map<String, WidgetBuilder> routes = {
   FacadePatternScreen.routeName: (context) => const FacadePatternScreen(),
   InterpreterPatternScreen.routeName: (context) => const InterpreterPatternScreen(),
   IteratorPatternScreen.routeName: (context) => const IteratorPatternScreen(),
+  FactoryMethodPatternScreen.routeName: (context) => const FactoryMethodPatternScreen(),
+  AbstractFactoryPatternScreen.routeName: (context) => const AbstractFactoryPatternScreen(),
+  CommandPatternScreen.routeName: (context) => const CommandPatternScreen(),
 };

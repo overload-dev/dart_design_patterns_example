@@ -1,7 +1,10 @@
 import 'package:dart_design_patterns_example/components/project_app_bar.dart';
+import 'package:dart_design_patterns_example/pages/abstract_factory_pattern/screens/abstract_factory_pattern_screen.dart';
 import 'package:dart_design_patterns_example/pages/adapter_pattern/screens/adapter_patern_screen.dart';
+import 'package:dart_design_patterns_example/pages/command_pattern/screens/command_pattern_screen.dart';
 import 'package:dart_design_patterns_example/pages/composite_pattern/screen/composite_screen.dart';
 import 'package:dart_design_patterns_example/pages/facade_pattern/screens/facade_pattern_screen.dart';
+import 'package:dart_design_patterns_example/pages/factory_method_pattern/screens/factory_method_pattern_screen.dart';
 import 'package:dart_design_patterns_example/pages/interpreter_pattern/screens/interpreter_pattern_screen.dart';
 import 'package:dart_design_patterns_example/pages/iterator_pattern/screens/iterator_pattern_screen.dart';
 import 'package:dart_design_patterns_example/pages/state_pattern/screens/state_pattern_screen.dart';
@@ -44,6 +47,18 @@ class MainScreen extends StatelessWidget {
     {
       'title': ' 08\nIterator Pattern Example',
       'routeName': IteratorPatternScreen.routeName,
+    },
+    {
+      'title': ' 09\nFactory Method Pattern Example',
+      'routeName': FactoryMethodPatternScreen.routeName,
+    },
+    {
+      'title': ' 10\nAbstract Factory Pattern Example',
+      'routeName': AbstractFactoryPatternScreen.routeName,
+    },
+    {
+      'title': ' 11\nCommand Pattern Example',
+      'routeName': CommandPatternScreen.routeName,
     },
   ];
 

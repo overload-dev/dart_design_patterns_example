@@ -36,13 +36,12 @@ class _IteratorPatternScreenState extends State<IteratorPatternScreen> {
     var graph = Graph();
 
     graph.addEdge(1, 2);
-    graph.addEdge(3, 6);
-    graph.addEdge(3, 7);
-    graph.addEdge(4, 8);
     graph.addEdge(1, 3);
     graph.addEdge(1, 4);
     graph.addEdge(2, 5);
-
+    graph.addEdge(3, 6);
+    graph.addEdge(3, 7);
+    graph.addEdge(4, 8);
 
     return graph;
   }

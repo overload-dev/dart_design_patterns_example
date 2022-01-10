@@ -2,7 +2,6 @@ import 'dart:collection';
 
 import 'package:dart_design_patterns_example/pages/iterator_pattern/interators/depth_first_tree_collection.dart';
 import 'package:dart_design_patterns_example/pages/iterator_pattern/interators/itree_iterator.dart';
-import 'package:flutter/cupertino.dart';
 
 class DepthFirstIterator implements ITreeIterator {
   final DepthFirstTreeCollection treeCollection;
