@@ -13,4 +13,6 @@ learn dart design pattern
 ## 9. Factory
 ## 10. Abstract Factory
 ## 11. Command
-
+## 12. Memento
+## 13. Prototype
+## 14. Proxy

@@ -6,10 +6,14 @@ import 'package:dart_design_patterns_example/pages/facade_pattern/screens/facade
 import 'package:dart_design_patterns_example/pages/factory_method_pattern/screens/factory_method_pattern_screen.dart';
 import 'package:dart_design_patterns_example/pages/interpreter_pattern/screens/interpreter_pattern_screen.dart';
 import 'package:dart_design_patterns_example/pages/iterator_pattern/screens/iterator_pattern_screen.dart';
+import 'package:dart_design_patterns_example/pages/memento_pattern/screens/memento_screen.dart';
+import 'package:dart_design_patterns_example/pages/prototype_pattern/screens/prototype_pattern_screen.dart';
+import 'package:dart_design_patterns_example/pages/proxy_pattern/screens/proxy_pattern_screen.dart';
 import 'package:dart_design_patterns_example/pages/state_pattern/screens/state_pattern_screen.dart';
 import 'package:dart_design_patterns_example/pages/strategy_pattern/screens/strategy_screen.dart';
 import 'package:dart_design_patterns_example/pages/template_method_pattern/screens/template_pattern_screen.dart';
-import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
+
 
 final Map<String, WidgetBuilder> routes = {
   AdapterPatternScreen.routeName: (context) => const AdapterPatternScreen(),
@@ -23,4 +27,7 @@ final Map<String, WidgetBuilder> routes = {
   FactoryMethodPatternScreen.routeName: (context) => const FactoryMethodPatternScreen(),
   AbstractFactoryPatternScreen.routeName: (context) => const AbstractFactoryPatternScreen(),
   CommandPatternScreen.routeName: (context) => const CommandPatternScreen(),
+  MementoPatternScreen.routeName: (context) => const MementoPatternScreen(),
+  PrototypePatternScreen.routeName: (context) => const PrototypePatternScreen(),
+  ProxyPatternScreen.routeName: (context) => const ProxyPatternScreen(),
 };

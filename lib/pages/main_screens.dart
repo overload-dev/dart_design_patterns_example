@@ -7,6 +7,9 @@ import 'package:dart_design_patterns_example/pages/facade_pattern/screens/facade
 import 'package:dart_design_patterns_example/pages/factory_method_pattern/screens/factory_method_pattern_screen.dart';
 import 'package:dart_design_patterns_example/pages/interpreter_pattern/screens/interpreter_pattern_screen.dart';
 import 'package:dart_design_patterns_example/pages/iterator_pattern/screens/iterator_pattern_screen.dart';
+import 'package:dart_design_patterns_example/pages/memento_pattern/screens/memento_screen.dart';
+import 'package:dart_design_patterns_example/pages/prototype_pattern/screens/prototype_pattern_screen.dart';
+import 'package:dart_design_patterns_example/pages/proxy_pattern/screens/proxy_pattern_screen.dart';
 import 'package:dart_design_patterns_example/pages/state_pattern/screens/state_pattern_screen.dart';
 import 'package:dart_design_patterns_example/pages/strategy_pattern/screens/strategy_screen.dart';
 import 'package:dart_design_patterns_example/pages/template_method_pattern/screens/template_pattern_screen.dart';
@@ -59,6 +62,18 @@ class MainScreen extends StatelessWidget {
     {
       'title': ' 11\nCommand Pattern Example',
       'routeName': CommandPatternScreen.routeName,
+    },
+    {
+      'title': ' 12\nMemento Pattern Example',
+      'routeName': MementoPatternScreen.routeName,
+    },
+    {
+      'title': ' 13\nPrototype Pattern Example',
+      'routeName': PrototypePatternScreen.routeName,
+    },
+    {
+      'title': ' 14\nProxy Pattern Example',
+      'routeName': ProxyPatternScreen.routeName,
     },
   ];
 
