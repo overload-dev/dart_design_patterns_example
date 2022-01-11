@@ -3,6 +3,7 @@ import 'package:dart_design_patterns_example/pages/abstract_factory_pattern/scre
 import 'package:dart_design_patterns_example/pages/adapter_pattern/screens/adapter_patern_screen.dart';
 import 'package:dart_design_patterns_example/pages/command_pattern/screens/command_pattern_screen.dart';
 import 'package:dart_design_patterns_example/pages/composite_pattern/screen/composite_screen.dart';
+import 'package:dart_design_patterns_example/pages/decorator_pattern/screens/decorator_pattern_screen.dart';
 import 'package:dart_design_patterns_example/pages/facade_pattern/screens/facade_pattern_screen.dart';
 import 'package:dart_design_patterns_example/pages/factory_method_pattern/screens/factory_method_pattern_screen.dart';
 import 'package:dart_design_patterns_example/pages/interpreter_pattern/screens/interpreter_pattern_screen.dart';
@@ -13,6 +14,7 @@ import 'package:dart_design_patterns_example/pages/proxy_pattern/screens/proxy_p
 import 'package:dart_design_patterns_example/pages/state_pattern/screens/state_pattern_screen.dart';
 import 'package:dart_design_patterns_example/pages/strategy_pattern/screens/strategy_screen.dart';
 import 'package:dart_design_patterns_example/pages/template_method_pattern/screens/template_pattern_screen.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class MainScreen extends StatelessWidget {
@@ -75,6 +77,10 @@ class MainScreen extends StatelessWidget {
       'title': ' 14\nProxy Pattern Example',
       'routeName': ProxyPatternScreen.routeName,
     },
+    {
+      'title': '15\nDecorator Pattern Example',
+      'routeName': DecoratorPatternScreen.routeName,
+    },
   ];
 
   @override
@@ -91,8 +97,10 @@ class MainScreen extends StatelessWidget {
         itemCount: routes.length,
         itemBuilder: (context, index) {
           return GestureDetector(
-            onTap: () => Navigator.pushNamed(
-                context, routes[index]['routeName'] as String),
+            onTap: () {
+              Navigator.pushNamed(
+                  context, routes[index]['routeName'] as String);
+            },
             child: _buildItemCard(
               context: context,
               title: routes[index]['title'] as String,

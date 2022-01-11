@@ -2,6 +2,7 @@ import 'package:dart_design_patterns_example/pages/abstract_factory_pattern/scre
 import 'package:dart_design_patterns_example/pages/adapter_pattern/screens/adapter_patern_screen.dart';
 import 'package:dart_design_patterns_example/pages/command_pattern/screens/command_pattern_screen.dart';
 import 'package:dart_design_patterns_example/pages/composite_pattern/screen/composite_screen.dart';
+import 'package:dart_design_patterns_example/pages/decorator_pattern/screens/decorator_pattern_screen.dart';
 import 'package:dart_design_patterns_example/pages/facade_pattern/screens/facade_pattern_screen.dart';
 import 'package:dart_design_patterns_example/pages/factory_method_pattern/screens/factory_method_pattern_screen.dart';
 import 'package:dart_design_patterns_example/pages/interpreter_pattern/screens/interpreter_pattern_screen.dart';
@@ -30,4 +31,5 @@ final Map<String, WidgetBuilder> routes = {
   MementoPatternScreen.routeName: (context) => const MementoPatternScreen(),
   PrototypePatternScreen.routeName: (context) => const PrototypePatternScreen(),
   ProxyPatternScreen.routeName: (context) => const ProxyPatternScreen(),
+  DecoratorPatternScreen.routeName : (context) => const DecoratorPatternScreen(),
 };

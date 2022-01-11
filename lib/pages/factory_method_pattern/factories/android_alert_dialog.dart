@@ -22,4 +22,5 @@ class AndroidAlertDialog extends CustomDialog {
       ],
     );
   }
+
 }
