@@ -1,6 +1,7 @@
 import 'package:dart_design_patterns_example/components/project_app_bar.dart';
 import 'package:dart_design_patterns_example/pages/abstract_factory_pattern/screens/abstract_factory_pattern_screen.dart';
 import 'package:dart_design_patterns_example/pages/adapter_pattern/screens/adapter_patern_screen.dart';
+import 'package:dart_design_patterns_example/pages/bridge_pattern/screens/bridge_pattern_screen.dart';
 import 'package:dart_design_patterns_example/pages/command_pattern/screens/command_pattern_screen.dart';
 import 'package:dart_design_patterns_example/pages/composite_pattern/screen/composite_screen.dart';
 import 'package:dart_design_patterns_example/pages/decorator_pattern/screens/decorator_pattern_screen.dart';
@@ -14,7 +15,6 @@ import 'package:dart_design_patterns_example/pages/proxy_pattern/screens/proxy_p
 import 'package:dart_design_patterns_example/pages/state_pattern/screens/state_pattern_screen.dart';
 import 'package:dart_design_patterns_example/pages/strategy_pattern/screens/strategy_screen.dart';
 import 'package:dart_design_patterns_example/pages/template_method_pattern/screens/template_pattern_screen.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class MainScreen extends StatelessWidget {
@@ -80,6 +80,10 @@ class MainScreen extends StatelessWidget {
     {
       'title': '15\nDecorator Pattern Example',
       'routeName': DecoratorPatternScreen.routeName,
+    },
+    {
+      'title': '16\nBridge Pattern Example',
+      'routeName': BridgePatternScreen.routeName,
     },
   ];
 

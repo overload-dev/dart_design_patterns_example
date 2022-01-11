@@ -1,4 +1,4 @@
-import 'package:dart_design_patterns_example/components/patform_scaffold.dart';
+import 'package:dart_design_patterns_example/components/platform_scaffold.dart';
 import 'package:flutter/material.dart';
 
 class ProjectMaterialScaffold implements PlatformScaffold {
