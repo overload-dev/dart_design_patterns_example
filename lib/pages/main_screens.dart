@@ -2,6 +2,7 @@ import 'package:dart_design_patterns_example/components/project_app_bar.dart';
 import 'package:dart_design_patterns_example/pages/abstract_factory_pattern/screens/abstract_factory_pattern_screen.dart';
 import 'package:dart_design_patterns_example/pages/adapter_pattern/screens/adapter_patern_screen.dart';
 import 'package:dart_design_patterns_example/pages/bridge_pattern/screens/bridge_pattern_screen.dart';
+import 'package:dart_design_patterns_example/pages/builder_pattern/screens/builder_pattern_screen.dart';
 import 'package:dart_design_patterns_example/pages/command_pattern/screens/command_pattern_screen.dart';
 import 'package:dart_design_patterns_example/pages/composite_pattern/screen/composite_screen.dart';
 import 'package:dart_design_patterns_example/pages/decorator_pattern/screens/decorator_pattern_screen.dart';
@@ -84,6 +85,10 @@ class MainScreen extends StatelessWidget {
     {
       'title': '16\nBridge Pattern Example',
       'routeName': BridgePatternScreen.routeName,
+    },
+    {
+      'title': '17\nBuilder Pattern Example',
+      'routeName': BuilderPatternScreen.routeName,
     },
   ];
 
