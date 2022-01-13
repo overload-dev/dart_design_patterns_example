@@ -12,6 +12,7 @@ import 'package:dart_design_patterns_example/pages/factory_method_pattern/screen
 import 'package:dart_design_patterns_example/pages/flyweight_pattern/screens/flyweight_pattern_screen.dart';
 import 'package:dart_design_patterns_example/pages/interpreter_pattern/screens/interpreter_pattern_screen.dart';
 import 'package:dart_design_patterns_example/pages/iterator_pattern/screens/iterator_pattern_screen.dart';
+import 'package:dart_design_patterns_example/pages/mediator_pattern/screens/mediator_pattern_screen.dart';
 import 'package:dart_design_patterns_example/pages/memento_pattern/screens/memento_screen.dart';
 import 'package:dart_design_patterns_example/pages/prototype_pattern/screens/prototype_pattern_screen.dart';
 import 'package:dart_design_patterns_example/pages/proxy_pattern/screens/proxy_pattern_screen.dart';
@@ -104,6 +105,10 @@ class MainScreen extends StatelessWidget {
     {
       'title': '20\nVisitor Pattern Example',
       'routeName': VisitorPatternScreen.routeName,
+    },
+    {
+      'title': '21\nMediator Pattern Example',
+      'routeName': MediatorPatternScreen.routeName,
     },
   ];
 
