@@ -1,6 +1,5 @@
 import 'package:dart_design_patterns_example/pages/builder_pattern/burger_builder_base.dart';
 import 'package:dart_design_patterns_example/pages/builder_pattern/ingredients/bun/index.dart';
-import 'package:dart_design_patterns_example/pages/builder_pattern/ingredients/cheese.dart';
 import 'package:dart_design_patterns_example/pages/builder_pattern/ingredients/grill_seasoning.dart';
 import 'package:dart_design_patterns_example/pages/builder_pattern/ingredients/patties/index.dart';
 import 'package:dart_design_patterns_example/pages/builder_pattern/ingredients/sauces/index.dart';
