@@ -13,12 +13,14 @@ import 'package:dart_design_patterns_example/pages/interpreter_pattern/screens/i
 import 'package:dart_design_patterns_example/pages/iterator_pattern/screens/iterator_pattern_screen.dart';
 import 'package:dart_design_patterns_example/pages/mediator_pattern/screens/mediator_pattern_screen.dart';
 import 'package:dart_design_patterns_example/pages/memento_pattern/screens/memento_screen.dart';
+import 'package:dart_design_patterns_example/pages/observer_pattern/screens/observer_pattern_screen.dart';
 import 'package:dart_design_patterns_example/pages/prototype_pattern/screens/prototype_pattern_screen.dart';
 import 'package:dart_design_patterns_example/pages/proxy_pattern/screens/proxy_pattern_screen.dart';
 import 'package:dart_design_patterns_example/pages/state_pattern/screens/state_pattern_screen.dart';
 import 'package:dart_design_patterns_example/pages/strategy_pattern/screens/strategy_screen.dart';
 import 'package:dart_design_patterns_example/pages/template_method_pattern/screens/template_pattern_screen.dart';
 import 'package:dart_design_patterns_example/pages/visitor_pattern/screens/visitor_pattern_screen.dart';
+import 'package:dart_design_patterns_example/training/screens/training_screen.dart';
 import 'package:flutter/widgets.dart';
 
 
@@ -44,4 +46,6 @@ final Map<String, WidgetBuilder> routes = {
   ChainOfResponsibilityScreen.routeName: (context) => const ChainOfResponsibilityScreen(),
   VisitorPatternScreen.routeName: (context) => const VisitorPatternScreen(),
   MediatorPatternScreen.routeName: (context) => const MediatorPatternScreen(),
+  ObserverPatternScreen.routeName: (context) => const ObserverPatternScreen(),
+  TrainingScreen.routeName: (context) => const TrainingScreen(),
 };

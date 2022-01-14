@@ -14,18 +14,24 @@ import 'package:dart_design_patterns_example/pages/interpreter_pattern/screens/i
 import 'package:dart_design_patterns_example/pages/iterator_pattern/screens/iterator_pattern_screen.dart';
 import 'package:dart_design_patterns_example/pages/mediator_pattern/screens/mediator_pattern_screen.dart';
 import 'package:dart_design_patterns_example/pages/memento_pattern/screens/memento_screen.dart';
+import 'package:dart_design_patterns_example/pages/observer_pattern/screens/observer_pattern_screen.dart';
 import 'package:dart_design_patterns_example/pages/prototype_pattern/screens/prototype_pattern_screen.dart';
 import 'package:dart_design_patterns_example/pages/proxy_pattern/screens/proxy_pattern_screen.dart';
 import 'package:dart_design_patterns_example/pages/state_pattern/screens/state_pattern_screen.dart';
 import 'package:dart_design_patterns_example/pages/strategy_pattern/screens/strategy_screen.dart';
 import 'package:dart_design_patterns_example/pages/template_method_pattern/screens/template_pattern_screen.dart';
 import 'package:dart_design_patterns_example/pages/visitor_pattern/screens/visitor_pattern_screen.dart';
+import 'package:dart_design_patterns_example/training/screens/training_screen.dart';
 import 'package:flutter/material.dart';
 
 class MainScreen extends StatelessWidget {
   MainScreen({Key? key}) : super(key: key);
 
   final List<Map<String, String>> routes = [
+    {
+      'title': 'etc\nTraining Screen',
+      'routeName': TrainingScreen.routeName,
+    },
     {
       'title': '01.\nAdapter Pattern Example',
       'routeName': AdapterPatternScreen.routeName,
@@ -110,6 +116,10 @@ class MainScreen extends StatelessWidget {
       'title': '21\nMediator Pattern Example',
       'routeName': MediatorPatternScreen.routeName,
     },
+    {
+      'title': '22\nObserver Pattern Example',
+      'routeName': ObserverPatternScreen.routeName,
+    }
   ];
 
   @override
