@@ -2,6 +2,7 @@ import 'dart:io';
 
 import 'package:dart_design_patterns_example/training/theme_factory/appbars/android_appbar.dart';
 import 'package:dart_design_patterns_example/training/theme_factory/appbars/ios_apppbar.dart';
+import 'package:dart_design_patterns_example/training/theme_factory/buttons/ibutton.dart';
 import 'package:dart_design_patterns_example/training/theme_factory/interfaces/iappbar.dart';
 import 'package:dart_design_patterns_example/training/theme_factory/interfaces/iscaffold.dart';
 
@@ -19,17 +20,13 @@ class TrainingScreen extends StatefulWidget {
 }
 
 class _TrainingScreenState extends State<TrainingScreen> {
-  final List<IScaffold> scaffolds = [
-    AndroidScaffold(),
-    IOSScaffold(),
-  ];
-  late IScaffold _sScaffold;
+  final List<IScaffold> scaffolds = [AndroidScaffold(), IOSScaffold()];
+  final List<IAppBar> appbars = [AndroidAppBar(), IOSAppBar()];
+  final List<IButton> buttons = [AndroidButton(), IOSButton()];
 
-  final List<IAppBar> appbars = [
-    AndroidAppBar(),
-    IOSAppBar(),
-  ];
+  late IScaffold _sScaffold;
   late IAppBar _sAppBar;
+  late IButton _sButton;
 
   int selectedPlatformIndex = Platform.isIOS ? 1 : 0;
 
@@ -39,18 +36,17 @@ class _TrainingScreenState extends State<TrainingScreen> {
     setState(() {
       _sScaffold = scaffolds[selectedPlatformIndex];
       _sAppBar = appbars[selectedPlatformIndex];
+      _sButton = buttons[selectedPlatformIndex];
     });
   }
 
-  void _setPlatform(){
+  void _setPlatform() {
     setState(() {
       selectedPlatformIndex = selectedPlatformIndex == 1 ? 0 : 1;
       _sScaffold = scaffolds[selectedPlatformIndex];
       _sAppBar = appbars[selectedPlatformIndex];
+      _sButton = buttons[selectedPlatformIndex];
     });
-
-
-
   }
 
   @override
@@ -59,9 +55,7 @@ class _TrainingScreenState extends State<TrainingScreen> {
       context: context,
       appBar: _sAppBar.build(
         context: context,
-        leading: IconButton(onPressed: (){
-          Navigator.of(context).pop();
-        }, icon: Icon(Icons.arrow_back_ios)),
+        leading: null,
         title: const Text(
           'AppBar Test',
           style: TextStyle(fontWeight: FontWeight.bold),
@@ -72,10 +66,9 @@ class _TrainingScreenState extends State<TrainingScreen> {
         ],
       ),
       child: Center(
-        child: TextButton(
-          child: Text('Change Theme'),
-          onPressed: _setPlatform,
-        ),
+        child: _sButton.build(context: context,
+          child: const Text('Change Theme'),
+          onPressed: _setPlatform,),
       ),
     );
   }
